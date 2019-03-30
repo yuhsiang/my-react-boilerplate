@@ -3,7 +3,7 @@ const QUERY_TITLE = '#main-content > div:nth-child(3) > span.article-meta-value'
 const QUERY_DATE = '#main-content > div:nth-child(4) > span.article-meta-value';
 const QUERY_MAIN_CONTENT = '#main-content';
 
-const imageRegex = new RegExp(/(http[s?]:\/\/.*\.(jpg|png|gif|jpeg)$)/gm);
+const imageRegex = new RegExp(/(http(s?):\/\/.*\.(jpg|png|gif|jpeg)$)/gm);
 
 class DetailCrawler {
   constructor(html) {
