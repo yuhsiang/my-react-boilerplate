@@ -1,0 +1,24 @@
+
+
+# [Type] Subject
+#
+# Body (To explain what and why)
+#
+# --------------------
+# Example
+#    :feature: Add xxx
+#
+#    Add xxx because xxx, see #xxx
+#
+# --------------------
+# BW Commit Message Type
+# :feature:   增加功能，或是為了任務而更動程式碼
+# :test:      增加或是修改測試
+# :doc:       增加或是修改文件，註解
+# :fix:       修正錯誤，可能是臭蟲，地雷，環境變化等造成
+# :refactor:  重構程式碼，沒有增加功能，而是增加可讀性，易維護性，效能等
+# :config:    撰寫配置文件，包含 CI/CD 等設定
+# :clean:     移除程式碼，測試，文件，配置文件等等
+#
+# --------------------
+# 更多規範訊息請查看：http://gitlab.local.bridgewell.com/bwdmp/backlogs/backlogs/wikis/%E7%A8%8B%E5%BC%8F%E8%A6%8F%E7%AF%84/Git-Commit-Message

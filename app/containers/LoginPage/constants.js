@@ -1,0 +1,11 @@
+export const FORM_LOGIN = 'loginForm';
+
+export const AUTH_FORM_ONCHANGE = 'AUTH_FORM_ONCHANGE';
+export const AUTH_SET_LOGGIN_STATE = 'AUTH_LOGGIN_STATE';
+export const AUTH_REQUEST_ONSEND = 'AUTH_REQUEST_ONSEND';
+export const AUTH_ERROR = 'AUTH_ERROR';
+export const AUTH_RESET = 'AUTH_RESET';
+
+
+export const AUTH_IS_SENDING = 'AUTH_IS_SENDING';
+export const AUTH_FETCH_LOGIN = 'AUTH_FETCH_LOGIN';

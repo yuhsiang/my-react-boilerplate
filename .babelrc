@@ -1,0 +1,45 @@
+{
+  "presets": [
+    "@babel/preset-react",
+    "@babel/preset-env",
+    "@babel/preset-flow",
+  ],
+  "plugins":[
+    "@babel/plugin-syntax-dynamic-import",
+    "@babel/plugin-syntax-class-properties",
+    "@babel/plugin-proposal-class-properties",
+    ["module-resolver", {
+      "alias": {
+        "@app": "./app",
+        "@components": "./app/components",
+        "@containers": "./app/containers",
+      }
+    }]
+  ],
+  "env": {
+    "production": {
+      "only": [
+        "app"
+      ],
+      "plugins": [
+        // "transform-react-remove-prop-types",
+        // "transform-react-constant-elements",
+        // "transform-react-inline-elements"
+      ]
+    },
+    "test": {
+      "presets":[
+        ["@babel/preset-env",
+        {
+          "targets": {
+            "node": "current",
+          },
+        },]
+      ],
+      "plugins": [
+        "transform-dynamic-import",
+        "@babel/plugin-transform-modules-commonjs"
+      ]
+    }
+  }
+}

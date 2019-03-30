@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> should render app with loading spinner 1`] = `
+<div>
+  <div
+    class="sc-bwzfXH igQbjz"
+  >
+    <div
+      class="sc-bdVaJa fgTwBU"
+    >
+      <span
+        class="loader-text"
+      >
+        Loading
+      </span>
+      <div
+        class="loader-circle"
+      />
+      <div
+        class="loader-circle-orbit"
+      >
+        <div
+          class="loader-circle-line"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

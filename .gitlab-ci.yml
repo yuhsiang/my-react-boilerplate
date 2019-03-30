@@ -1,0 +1,50 @@
+# include: 
+
+# using docker sock method
+stages:
+  - build_and_lint
+  - build_server
+  - sage_deploy
+
+build-app:
+  # extends: 
+  stage: build_and_lint
+  variables:
+    IMAGE_TAG: 'node-app'
+    DOCKERFILE: docker/App.Dockerfile
+    BUILD_IMAGE_USING_CACHE: 'true'
+    # REGISTRY_USER: user
+    
+  script:
+    - build_image
+    - push_image
+    - make test
+
+build-source:
+  # extends: .deployer
+  stage: build_server
+  variables:
+    BUILD_IMAGE_USING_CACHE: 'true'
+    DOCKERFILE: docker/Dockerfile
+    # REGISTRY_USER: user
+    
+  script:
+    - build_image
+    - push_image
+  only:
+    - /^feature\/*/
+    - develop
+    - master
+
+
+stage-deploy:
+  stage: sage_deploy
+  script:
+    - make pull
+    - make run
+  tags:
+    # - shell-runner
+  only:
+    - /^feature\/*/
+    - develop
+    - master

@@ -1,0 +1,9 @@
+{
+  "app.components.HomePage.header": "This is HomePage component!",
+  "app.components.NotFoundPage.header": "This is NotFoundPage component!",
+  "dmp.containers.LoginPage.email.message": "Email",
+  "dmp.containers.LoginPage.login.message": "登入",
+  "dmp.containers.LoginPage.password.message": "密碼",
+  "dmp.containers.LoginPage.register.message": "註冊",
+  "dmp.containers.LoginPage.resetPassword.message": "忘記密碼?"
+}

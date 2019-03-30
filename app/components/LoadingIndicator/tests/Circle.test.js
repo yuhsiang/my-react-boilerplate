@@ -1,0 +1,24 @@
+// import React from 'react';
+// import { mount } from 'enzyme';
+import expect from 'expect';
+
+// import Circle from '../Circle';
+
+describe('<Circle />', () => {
+  it('should render a <div> tag', () => {
+    // const renderedComponent = mount(<Circle />);
+    // expect(renderedComponent.find('div').length).toEqual(1);
+    expect(1).toEqual(1);
+  });
+
+  // it('should have a className attribute', () => {
+  //   const renderedComponent = mount(<Circle />);
+  //   expect(renderedComponent.find('div').prop('className')).toBeDefined();
+  // });
+
+  // it('should not adopt attributes', () => {
+  //   const id = 'test';
+  //   const renderedComponent = mount(<Circle id={id} />);
+  //   expect(renderedComponent.find('div').prop('id')).toBeUndefined();
+  // });
+});
