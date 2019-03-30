@@ -18,7 +18,6 @@ import FontFaceObserver from 'fontfaceobserver';
 
 import 'sanitize.css/sanitize.css';
 import 'font-awesome/css/font-awesome.min.css';
-import 'github-markdown-css/github-markdown.css';
 
 // // load antd first load neccessary style only
 // import 'antd/lib/message/style';
